@@ -3,9 +3,9 @@
     <h1>Przegląd przepisów</h1>
 
     <div class="personalData">
-      <span class="nick">{{ this.me.FirstName +' '+ this.me.LastName }}</span>
+      <span class="nick">{{ this.me.firstName +' '+ this.me.lastName }}</span>
       <button class="logout-btn">WYLOGUJ</button>
-      <img :src="this.me.Avatar" :alt="this.me.FirstName +' '+ this.me.LastName" class="avatar">
+      <img :src="this.me.avatar" :alt="this.me.firstName +' '+ this.me.lastName" class="avatar">
     </div>
 
     <form class="searchSection">

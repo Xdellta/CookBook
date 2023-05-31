@@ -4,18 +4,18 @@
       <IconCookie class="logo" />CookBook
     </h1>
 
-    <RouterLink to="home" class="newRecipe-btn">+ Nowy przepis</RouterLink>
+    <RouterLink to="/" class="newRecipe-btn">+ Nowy przepis</RouterLink>
 
     <div class="links">
-      <RouterLink to="home" class="link">
+      <RouterLink to="/" class="link">
         <IconHome class="icon" /> Przegląd
       </RouterLink>
 
-      <RouterLink to="home" class="link">
+      <RouterLink to="/Favorite" class="link">
         <IconHeart class="icon" /> Ulubione
       </RouterLink>
       
-      <RouterLink to="home" class="link">
+      <RouterLink to="/" class="link">
         <IconRecipe class="icon" /> Moje przepisy
       </RouterLink>
     </div>
@@ -113,5 +113,9 @@
     width: 25px;
     height: max-content;
     margin-right: 10px;
+  }
+
+  .link.router-link-active {
+    background-color: var(--color-background2);
   }
 </style>

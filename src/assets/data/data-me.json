@@ -1,8 +1,22 @@
-[
-  {
-    "FirstName": "John",
-    "LastName": "Doe",
-    "Avatar": "https://i.pravatar.cc/150?img=3",
-    "Plan": "free"
-  }
-]
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "avatar": "https://i.pravatar.cc/150?img=3",
+  "plan": "free",
+  "favorite": [
+    {
+      "id": 2
+    },
+    {
+      "id": 4
+    }
+  ],
+  "meRecipes": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    }
+  ]
+}
