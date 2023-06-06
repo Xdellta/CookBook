@@ -10,25 +10,38 @@
 
     <form class="searchSection">
       <IconSearch class="search-btn" />
-      <input type="text" placeholder="Wyszukaj przepis" class="input">
+      <input type="text" placeholder="Wyszukaj przepis" class="input" v-on:input="filterData">
     </form>
   </header>
 </template>
 
 <script>
   import dataMe from "../assets/data/data-me.json"
+  import dataRecipe from "../assets/data/data-recipe.json"
 
   import IconSearch from "../assets/icons/IconSearch.vue"
 
   export default {
     data() {
       return {
-        me: dataMe
+        me: dataMe,
+        dataRecipe: dataRecipe,
+        originalRecipes: []
       }
     },
     
     components: {
       IconSearch
+    },
+
+    methods: {
+      filterData(event) {
+        const keyword = event.target.value.toLowerCase().trim()
+
+        this.dataRecipe = this.originalRecipes.filter(recipe => {
+          return recipe.Name.toLowerCase().includes(keyword)
+        })
+      }
     }
   }
 </script>
