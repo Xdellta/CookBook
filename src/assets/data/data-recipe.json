@@ -9,7 +9,33 @@
     "fat": 15,
     "carbohydrates": 20,
     "date_added": "2023.05.15",
-    "time_added": "12:30"
+    "time_added": "12:30",
+    "ingredients": [
+      {
+        "name": "Pomidory",
+        "quantity": "3 sztuki"
+      },
+      {
+        "name": "Ogórki",
+        "quantity": "2 sztuki"
+      },
+      {
+        "name": "Oliwki",
+        "quantity": "10 sztuk"
+      },
+      {
+        "name": "Ser feta",
+        "quantity": "100g"
+      }
+    ],
+    "instruction": [
+      "1. Pokrój pomidory na kawałki.",
+      "2. Pokrój ogórki na plasterki.",
+      "3. Odcedź oliwki.",
+      "4. Pokrój ser fetę na kostkę.",
+      "5. Wszystkie składniki wymieszaj w misce.",
+      "6. Sałatkę podawaj schłodzoną."
+    ]
   },
   {
     "id": 2,

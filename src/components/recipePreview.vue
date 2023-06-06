@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="recipe" v-for="recipe in recipes" :key="recipe.id">
+    <router-link :to="`/Recipe/${recipe.id}`" class="recipe" v-for="recipe in recipes" :key="recipe.id">
       <div class="recipe__header">
         <h1>{{ recipe.name }}</h1>
         <span class="level" :class="{ 'hard': recipe.level === 'Trudne', 'medium': recipe.level === 'Średnie', 'easy': recipe.level === 'Łatwe' }">{{ recipe.level }}</span>
@@ -24,7 +24,7 @@
         <IconHeart v-if="!isFavorite(recipe.id)" class="IconHeart" @click="addFavorites(recipe.id)" />
         <IconHeart2 v-else class="IconHeart favorite" @click="removeFavorites(recipe.id)" />
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 
@@ -95,6 +95,8 @@
     justify-content: space-between;
     border-radius: 15px;
     background-color: var(--color-contrast2);
+    text-decoration: none;
+    color: var(--color-contrast1);
   }
 
   .recipe:hover {
@@ -196,6 +198,7 @@
   .IconHeart:hover {
     transform: scale(1.04);
     fill: red;
+    cursor: pointer;
   }
   
   .favorite {

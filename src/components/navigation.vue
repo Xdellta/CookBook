@@ -15,7 +15,7 @@
         <IconHeart class="icon" /> Ulubione
       </RouterLink>
       
-      <RouterLink to="/" class="link">
+      <RouterLink to="/MeRecipe" class="link">
         <IconRecipe class="icon" /> Moje przepisy
       </RouterLink>
     </div>
